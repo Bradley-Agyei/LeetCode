@@ -7,7 +7,7 @@ class Solution(object):
         hashmap = {}
         n = len(nums)
 
-        # loop through nums and see if difference of currentNum - target is already in hashmap: if so return indices
+        # loop through nums and see if difference of target - nums[i] is already in hashmap: if so return indices
         for i in range(n):
             difference = target - nums[i]
             if difference in hashmap:
