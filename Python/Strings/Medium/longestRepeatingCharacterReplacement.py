@@ -24,5 +24,5 @@ class Solution(object):
 
         return max_length 
 
-# Time comp: O(26 * n)
+# Time comp: O(n)
 # Space comp: O(n)
