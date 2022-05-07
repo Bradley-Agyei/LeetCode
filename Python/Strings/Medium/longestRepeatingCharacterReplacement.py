@@ -5,16 +5,17 @@ class Solution(object):
         length = len(s)
 
         # init left pointer, max_length, max_frequency
-        left, max_length = 0, 0
+        left, max_length, max_frequency = 0, 0, 0
 
         # loop through s 
         for right in range(length):
 
             # get count of chars
             count[s[right]] = 1 + count.get(s[right], 0)
+            max_frequency = max(max_frequency, count[s[right]])
 
             # check if window is valid, decrement count of char, and move left pointer 
-            while (right - left + 1) - max(count.values()) > k:
+            while (right - left + 1) - max_frquency > k:
                 count[s[left]] -= 1
                 left += 1
 
