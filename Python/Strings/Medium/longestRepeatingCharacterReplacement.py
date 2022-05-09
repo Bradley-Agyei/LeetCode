@@ -15,7 +15,7 @@ class Solution(object):
             max_frequency = max(max_frequency, count[s[right]])
 
             # check if window is valid, decrement count of char, and move left pointer 
-            while (right - left + 1) - max_frquency > k:
+            while (right - left + 1) - max_frequency > k:
                 count[s[left]] -= 1
                 left += 1
 
