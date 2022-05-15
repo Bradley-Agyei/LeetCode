@@ -25,3 +25,6 @@ class Solution(object):
             return (self.sameTree(root.left, subRoot.left) and
                     self.sameTree(root.right, subRoot.right))
         return False
+
+#Time comp:
+#Space comp: 
