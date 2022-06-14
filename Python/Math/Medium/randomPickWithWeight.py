@@ -1,6 +1,5 @@
 import random
 
-
 class Solution(object):
     def __init__(self, w):
         # init prefix_sum list, prefix_sum 
